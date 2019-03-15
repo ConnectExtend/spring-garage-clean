@@ -12,7 +12,7 @@ const garageData = [
   {
     id: 3,
     text:
-      'Spray cleaner on cloth and wipe down mounted shelves, light switches, door jambs, door knobs, and window frames',
+      'Spray cleaner on cloth and wipe-down shelves, light switches, door jambs, door knobs, and window frames',
     completed: false,
   },
   {
