@@ -1,8 +1,19 @@
 import React, { Component } from 'react';
 
+import './styles.css';
+
+import Header from './Header';
+import GarageTask from './GarageTask';
+
 class App extends Component {
   render() {
-    return <div className="App" />;
+    return (
+      <div>
+        <Header />
+        <GarageTask />
+        <GarageTask />
+      </div>
+    );
   }
 }
 
