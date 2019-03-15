@@ -1,7 +1,9 @@
+// React requires a key (id) to track which items have changed, are added, or are removed.
+
 const garageData = [
   {
     id: 1,
-    task: 'Move everything out of the garage',
+    text: 'Move everything out of the garage',
     completed: false,
   },
   {
@@ -22,13 +24,13 @@ const garageData = [
   },
   {
     id: 5,
-    text: 'Sweep floor or use leaf blower',
+    text: 'Sweep floor to remove all debris',
     completed: false,
   },
   {
     id: 6,
     text:
-      'Sort, toss or mark for donation as you return items to garage',
+      'As you return items to the garage: Sort, toss or mark for donation',
     completed: false,
   },
 ];

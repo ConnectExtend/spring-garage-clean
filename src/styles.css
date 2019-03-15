@@ -3,25 +3,34 @@
 }
 
 body {
-  /* concrete */
-  background-color: #d2d1cd;
-  font-size: 15px;
+  background-color: #7fe67f;
+  font-size: 16px;
   font-family: Roboto, sans-serif;
   line-height: 1.4;
 }
 
 .header {
-  font-size: 1.7em;
+  border-bottom: lightgray solid 2px;
+  border-top: lightgray solid 2px;
+  color: #193dff;
+  font-size: 1.8em;
+  letter-spacing: 1.6px;
+  margin: 5px auto 7px;
   text-align: center;
+  text-shadow: 1px 1px 1px gray;
+  width: 90%;
 }
 
 .task-list {
   background-color: #fff;
-  margin: auto;
-  padding: 10px 20px 10px;
-  width: 70%;
+  margin: 0 auto;
+  padding: 10px 15px 7px 10px;
+  /* padding: 30px; */
+  width: 80%;
+  max-width: 1000px;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
   box-shadow: /* The top layer shadow */
   0 1px 1px rgba(0, 0, 0, 0.15), /* The second layer */
   0 10px 0 -5px #eee, /* The second layer shadow */
@@ -30,12 +39,12 @@ body {
   0 20px 1px -9px rgba(0, 0, 0, 0.15);
 }
 
-/* input[type=checkbox] {
-  padding-right: 10px;
-} */
+input[type=checkbox] {
+  margin-right: 10px;
+}
 
 input[type=checkbox]:focus {
-  box-shadow: 0 0 17px 3px #C4C3C2;
+  box-shadow: 0 0 17px 3px #c4c3c2;
   outline: none;
 }
 
@@ -43,8 +52,8 @@ input[type=checkbox]:focus {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  padding: 0 0 10px 10px;
-  width: 80%;
+  padding: 10px 5px 15px 15px;
+  width: 90%;
   border-bottom: 1px solid #d2d1cd;
   font-weight: 100;
   color: #333;

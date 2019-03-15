@@ -1,17 +1,16 @@
 import React from 'react';
 
 import './styles.css';
-import App from './App';
 
-function GarageTask() {
+function GarageTask(props) {
   return (
-    <main>
-      <form className="task-list">
-        <input type="checkbox" id="checkbox" />
-        <label className="task-item" for="checkbox">
-          Spray cleaner on cloth and wipe-down shelves, light
-          switches, door jambs, door knobs, and window frames
-        </label>
+    <main className="task-item">
+      {/* Because HTML form elements naturally keep some internal
+      state, they work a little differently in React: controlled
+      components */}
+      <form>
+        <input type="checkbox" checked={props.task.completed} />
+        <label>{props.task.text}</label>
       </form>
     </main>
   );
