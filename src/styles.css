@@ -1,0 +1,51 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  /* concrete */
+  background-color: #d2d1cd;
+  font-size: 15px;
+  font-family: Roboto, sans-serif;
+  line-height: 1.4;
+}
+
+.header {
+  font-size: 1.7em;
+  text-align: center;
+}
+
+.task-list {
+  background-color: #fff;
+  margin: auto;
+  padding: 10px 20px 10px;
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  box-shadow: /* The top layer shadow */
+  0 1px 1px rgba(0, 0, 0, 0.15), /* The second layer */
+  0 10px 0 -5px #eee, /* The second layer shadow */
+  0 10px 1px -4px rgba(0, 0, 0, 0.15), /* The third layer */
+  0 20px 0 -10px #eee, /* The third layer shadow */
+  0 20px 1px -9px rgba(0, 0, 0, 0.15);
+}
+
+/* input[type=checkbox] {
+  padding-right: 10px;
+} */
+
+input[type=checkbox]:focus {
+  box-shadow: 0 0 17px 3px #C4C3C2;
+  outline: none;
+}
+
+.task-item {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0 0 10px 10px;
+  width: 80%;
+  border-bottom: 1px solid #d2d1cd;
+  font-weight: 100;
+  color: #333;
+}
