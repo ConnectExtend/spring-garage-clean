@@ -8,11 +8,15 @@ import GarageTask from './GarageTask';
 
 /*
  / create a new array called garageTasks which is the result of 
- / mapping over the original array of task objects
+ / mapping over the updatedTasks array
 */
 /*
  / React requires a key prop, which is used to track 
  / which items have changed, are added, or are removed.
+*/
+/*
+ / pass the handleChange method down to the GarageTask component and then,
+ / in the GarageTask component, onChange will call method and pass in the id
 */
 class App extends Component {
   constructor() {
