@@ -8,6 +8,11 @@ import './styles.css';
 */
 
 function GarageTask(props) {
+  const completedTask = {
+    fontStyle: 'italic',
+    color: '#c4c3c2',
+    textDecoration: 'line-through',
+  };
   return (
     <main className="task-item">
       <form>
@@ -16,7 +21,9 @@ function GarageTask(props) {
           checked={props.task.completed}
           onChange={() => props.handleChange(props.task.id)}
         />
-        <label>{props.task.text}</label>
+        <label style={props.task.completed ? completedTask : null}>
+          {props.task.text}
+        </label>
       </form>
     </main>
   );
