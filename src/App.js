@@ -20,12 +20,32 @@ class App extends Component {
     this.state = {
       tasks: garageData,
     };
+    this.handleChange = this.handleChange.bind(this);
+  }
+
+  handleChange(id) {
+    this.setState(prevState => {
+      const updatedTasks = prevState.tasks.map(task => {
+        if (task.id === id) {
+          task.completed = !task.completed;
+        }
+        return task;
+      });
+      return {
+        tasks: updatedTasks,
+      };
+    });
   }
 
   render() {
-    const garageTasks = garageData.map(task => (
-      <GarageTask key={task.id} task={task} />
+    const garageTasks = this.state.tasks.map(task => (
+      <GarageTask
+        key={task.id}
+        task={task}
+        handleChange={this.handleChange}
+      />
     ));
+
     return (
       <div className="task-list">
         <Header />
