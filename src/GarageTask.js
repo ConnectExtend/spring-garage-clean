@@ -18,10 +18,14 @@ function GarageTask(props) {
       <form>
         <input
           type="checkbox"
+          id={props.task.id}
           checked={props.task.completed}
           onChange={() => props.handleChange(props.task.id)}
         />
-        <label style={props.task.completed ? completedTask : null}>
+        <label
+          htmlFor={props.task.id}
+          style={props.task.completed ? completedTask : null}
+        >
           {props.task.text}
         </label>
       </form>

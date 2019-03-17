@@ -31,11 +31,11 @@ body {
   padding: 15px 15px 25px 10px;
   width: 80%;
   box-shadow: /* The top layer shadow */
-    0 1px 1px rgba(0, 0, 0, 0.15), /* The second layer */
-    0 10px 0 -5px #eee, /* The second layer shadow */
-    0 10px 1px -4px rgba(0, 0, 0, 0.15), /* The third layer */
-    0 20px 0 -10px #eee, /* The third layer shadow */
-    0 20px 1px -9px rgba(0, 0, 0, 0.15);
+  0 1px 1px rgba(0, 0, 0, 0.15), /* The second layer */
+  0 10px 0 -5px #eee, /* The second layer shadow */
+  0 10px 1px -4px rgba(0, 0, 0, 0.15), /* The third layer */
+  0 20px 0 -10px #eee, /* The third layer shadow */
+  0 20px 1px -9px rgba(0, 0, 0, 0.15);
 }
 
 input[type=checkbox] {
@@ -56,4 +56,8 @@ input[type=checkbox]:focus {
   color: #333;
   padding: 10px 5px 15px 15px;
   width: 90%;
+}
+
+.task-item input, .task-item label {
+  cursor: pointer;
 }
